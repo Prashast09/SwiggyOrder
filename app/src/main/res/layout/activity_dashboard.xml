@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:animateLayoutChanges="true"
+        android:fillViewport="true"
+        >
+    <ExpandableListView
+        android:id="@+id/elv_variant"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:childDivider="@color/colorAccent"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="1dp"
+        android:groupIndicator="@null"
+        />
+    </ScrollView>
+
+
+    <include layout="@layout/partial_bottom_button"/>
+
+</LinearLayout>

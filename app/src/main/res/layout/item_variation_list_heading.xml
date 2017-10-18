@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card-view="http://schemas.android.com/apk/res-auto"
+              xmlns:card_view="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:divider="#ffffff"
+              android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                        xmlns:card-view="http://schemas.android.com/apk/res-auto"
+                                        android:id="@+id/card"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        card-view:cardBackgroundColor="@color/cardview_dark_background"
+                                        card-view:cardCornerRadius="2dp"
+                                        card-view:contentPadding="3dp"
+                                        card_view:cardCornerRadius="2dp"
+                                        card_view:cardUseCompatPadding="true"
+                                        card_view:contentPadding="3dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="10dp">
+
+
+            <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="80">
+
+                <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="5"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="2">
+
+                <ImageView
+                        android:id="@+id/indicator"
+                        android:layout_width="18dp"
+                        android:layout_height="11dp"
+                        android:layout_gravity="right"
+                        android:scaleType="fitXY"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
